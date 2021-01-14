@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:background="#AF87EC">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/arsenal">
+
+    </ImageView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아스널 FC"
+        android:textColor="#F8F8F8"
+        android:background="#F40505"
+        android:textSize="13pt"
+        android:textStyle="bold"
+        android:gravity="center">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arsenal F.C."
+        android:textColor="#032D75"
+        android:background="#FFFFFF"
+        android:textSize="13pt"
+        android:textStyle="bold"
+        android:gravity="center">
+    </TextView>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://namu.wiki/w/%EC%95%84%EC%8A%A4%EB%82%A0%20FC"
+        android:autoLink="all"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="8pt"
+        android:textStyle="bold">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/mu_player"
+        />
+
+
+</LinearLayout>
+
